@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>javaScript Intoduction</title>
+    </head>
+    <body>
+        <h2>What can javaScript do?</h2>
+        <p id="demo">JavaScript can change HTML content</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Hello javaScript! Today My first practice"'>Click Me!</button>
+
+        <h3>JavaScript can change source</h3>
+        <button type="button" onclick='document.getElementById("myImage").src="images/on.jpg"'>Turn on the light</button>
+            <img id="myImage" src="images/off.jpg" alt="no Image found" width="100px">
+        <button type="button" onclick='document.getElementById("myImage").src="images/off.jpg"'>Turn off the light</button>
+        <h4>JavaScript can change style</h4>
+        <h5 id="name">Md. Imran Hossain</h5>
+        <button type="button" onclick='document.getElementById("name").style.color="red"'>Change Css Style</button>
+
+        <h1>JavaScript can display data in different ways: Document.write</h1>
+        <script>
+            document.write("Hello JavaScript");
+        </script>
+        <!-- <h1>JavaScript can display data in different ways: window.alert</h1>
+        <script>
+            alert("Hello JavaScript");
+        </script> -->
+
+        <h2>For debugging purpose you can call the console.log</h2>
+        <script>
+            console.log("Hello World");
+        </script>
+        <p id="number"></p>
+        <script>
+            let x = 10;
+            {
+                let x = 2;
+            }
+            document.getElementById("number").innerHTML=x;
+        </script>
+        <script src="let.js"></script>
+    </body>    
+
+</html>
