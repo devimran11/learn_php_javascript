@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    echo $_SESSION['page_count'];
     $country = "Bangladesh";
     $age = 16;
     $name = 'age';
